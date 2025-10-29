@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <header>
+   <div id="page"> <header>
         <h1>Formulário de Cadastro</h1>
     </header>
 
@@ -49,7 +50,7 @@
                     <input type="color" id="cor">
                 </div>
 
-                <div>
+                <div class="checkbox">
                     <h2>Escolha seus estilos musicais preferidos</h2>
 
                     <div>
@@ -83,11 +84,47 @@
                         <label for="outros">Outros</label>
                     </div>
                 </div>
+
+                <div class="radio">
+                    <h2>Qual você prefere?</h2>
+
+                    <div>
+                        <input type="radio" id="doce" name="gosto">
+                        <label for="doce">Doce</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="salgado" name="gosto">
+                        <label for="salgado">Salgado</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="ambos" name="gosto">
+                        <label for="ambos">Ambos</label>
+                    </div>
+
+                    <div>
+                        <h2>Escolha seu tamanho de camiseta</h2>
+                        <label for="selecione seu tamanho de camiseta"></label>
+                        <select name="tamanho" id="tamanho">
+                            <option value="PP">PP</option>
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                        <option value="XGG">XGG</option>
+                        <option value="XXGG">XXGG</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div>
+                    <label for="descricao">Faça uma breve descrição sobre você</label>
+                    <textarea name="descricao" id="descricao" placeholder="Digite aqui..."></textarea>
+                </div>
             </fieldset>
         
 
             <button>Enviar</button>
         </form> 
-    </main>
+    </main></div>
 </body>
 </html>
